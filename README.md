@@ -1,5 +1,7 @@
 # Traefik certs dumper Ansible role
 
+⚠️ **WARNING**: this role is now maintained in [mother-of-all-self-hosting/ansible-role-traefik-certs-dumper](https://github.com/mother-of-all-self-hosting/ansible-role-traefik-certs-dumper).
+
 This is an [Ansible](https://www.ansible.com/) role which installs [traefik-certs-dumper](https://github.com/ldez/traefik-certs-dumper) - a tool which dumps [ACME](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) certificates (like [Let's Encrypt](https://letsencrypt.org/)) from [Traefik](https://traefik.io/)'s `acme.json` file into some directory. The playbook installs the tool to run as a [Docker](https://www.docker.com/) container wrapped in a systemd service.
 
 This role *implicitly* depends on [`com.devture.ansible.role.systemd_docker_base`](https://github.com/devture/com.devture.ansible.role.systemd_docker_base).
